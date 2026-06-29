@@ -1,0 +1,167 @@
+{
+  "title": "Pantry",
+  "header": {
+    "newButton": "+ New",
+    "snapButton": "Snap",
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} items",
+    "expiringSuffix": " · {{count}} expiring"
+  },
+  "snapFlash": {
+    "addedOnly": "✓ {{added}} added to pantry",
+    "addedAndMerged": "✓ {{added}} added · {{merged}} merged"
+  },
+  "locationLabels": {
+    "fridge": "Fridge",
+    "freezer": "Freezer",
+    "pantry": "Pantry",
+    "other": "Other"
+  },
+  "sections": {
+    "expiringSoon": "Expiring soon"
+  },
+  "expiry": {
+    "expiredAgo_one": "Expired {{count}}d ago",
+    "expiredAgo_other": "Expired {{count}}d ago",
+    "today": "Expires today",
+    "tomorrow": "Expires tomorrow",
+    "inDays_one": "Expires in {{count}}d",
+    "inDays_other": "Expires in {{count}}d"
+  },
+  "row": {
+    "outBadge": "Out",
+    "useSomeA11y": "Use some {{name}}"
+  },
+  "toast": {
+    "used": "Used {{qty}} {{unit}} {{name}}",
+    "undo": "Undo"
+  },
+  "snapReview": {
+    "stackTitle": "Review",
+    "aiReadFromPhoto": "AI-read from your photo",
+    "aiReadFromReceipt": "AI-read from your receipt",
+    "retake": "Retake",
+    "countHeader_one": "{{count}} item.",
+    "countHeader_other": "{{count}} items.",
+    "body": "Tweak anything that's off. Expiries are pre-filled from typical shelf life — pick a location for each (defaults to Other).",
+    "purchasedEyebrow": "Purchased on",
+    "todayLabel": "Today",
+    "addByHand": "+ Add by hand",
+    "addAnother": "+ Add another",
+    "row": {
+      "remove": "Remove",
+      "namePlaceholder": "Ingredient name",
+      "qtyPlaceholder": "Qty",
+      "unitPlaceholder": "Unit (e.g. pcs, g, ml)",
+      "expiresEyebrow": "Expires",
+      "expiresPlaceholder": "Set expiry",
+      "locationEyebrow": "Location"
+    },
+    "submit": {
+      "fillOne": "Fill at least one item",
+      "addN": "Add {{count}} to pantry"
+    },
+    "alerts": {
+      "retakeTitle": "Retake photo?",
+      "retakeBody": "Your edits on this screen will be discarded.",
+      "retakeConfirm": "Retake",
+      "nothingTitle": "Nothing to add",
+      "nothingBody": "Each row needs a name and a quantity above zero.",
+      "addFailedTitle": "Could not add to pantry",
+      "unknownError": "Unknown error"
+    }
+  },
+  "snap": {
+    "stackTitle": "Snap groceries",
+    "tryAgainStackTitle": "Try again",
+    "guestGate": {
+      "headline": "Snap, don't type.",
+      "body": "Photo-to-pantry is part of saved accounts. Save your account to capture your haul or receipt in one shot.",
+      "cta": "Save my account to unlock →"
+    },
+    "eyebrow": "Snap to pantry",
+    "headline": "From bag to pantry.",
+    "modeHints": {
+      "haul": "Spread your haul on the counter and snap one wide shot. We'll list each item.",
+      "receipt": "Hold the receipt flat against a plain surface. We'll extract every grocery line."
+    },
+    "modeLabels": {
+      "haul": "Groceries",
+      "receipt": "Receipt"
+    },
+    "sourceEyebrow": "Source",
+    "takePhoto": "Take a photo",
+    "pickFromLibrary": "Pick from library",
+    "addByHand": "← Add by hand instead",
+    "empty": {
+      "eyebrowHaul": "Couldn't identify any items",
+      "eyebrowReceipt": "No items found",
+      "headline": "Hmm — fuzzy.",
+      "hintHaul": "Try better lighting, fewer overlapping items, or zoom in on a smaller part of the haul.",
+      "hintReceipt": "Make sure the receipt is in focus, the lines are readable, and there's no glare.",
+      "quotaReassurance": "Your AI quota wasn't charged — try again.",
+      "retryPhoto": "Try again with this photo",
+      "chooseAnother": "Choose another photo"
+    },
+    "busy": {
+      "eyebrowHaul": "Reading your groceries",
+      "eyebrowReceipt": "Reading your receipt",
+      "headline": "One moment…",
+      "body": "We're identifying each item, estimating quantities, and suggesting expiry dates. Takes about five seconds."
+    },
+    "alerts": {
+      "photoUnavailableTitle": "Photo unavailable",
+      "photoUnavailableBody": "Couldn't read the photo data. Try again or pick a different photo.",
+      "cameraDeniedTitle": "Camera access denied",
+      "cameraDeniedBody": "Open Settings to let RecipeGen use the camera, then come back and try again.",
+      "libraryDeniedTitle": "Photo access denied",
+      "libraryDeniedBody": "Open Settings to let RecipeGen use your photos, then come back.",
+      "settingsAction": "Settings",
+      "extractFailedTitleHaul": "Could not identify items",
+      "extractFailedTitleReceipt": "Could not parse receipt",
+      "extractFailedBody": "{{detail}}\n\nThis didn't count toward your monthly cap.",
+      "extractFailedFallback": "Try again in a moment."
+    }
+  },
+  "screens": {
+    "newTitle": "Add to pantry",
+    "submitNew": "Add item",
+    "submitEdit": "Save changes",
+    "notFound": "Item not found.",
+    "addFailedTitle": "Could not add item",
+    "saveFailedTitle": "Could not save",
+    "deleteFailedTitle": "Delete failed",
+    "unknownError": "Unknown error"
+  },
+  "form": {
+    "ingredientEyebrow": "Ingredient",
+    "ingredientPlaceholder": "Choose an ingredient...",
+    "quantityEyebrow": "Quantity",
+    "quantityPlaceholder": "0",
+    "unitEyebrow": "Unit",
+    "unitOtherChip": "Other…",
+    "unitCustomPlaceholder": "Custom unit",
+    "unitBackToChip": "Common",
+    "locationEyebrow": "Location",
+    "locationOtherPlaceholder": "Describe (e.g. garage fridge)",
+    "purchasedEyebrow": "Purchased",
+    "expiresEyebrow": "Expires",
+    "expiresAutoHint": "From {{days}}-day shelf life",
+    "notesEyebrow": "Notes",
+    "notesPlaceholder": "Optional",
+    "removeItem": "Remove this item",
+    "alerts": {
+      "missingIngredientTitle": "Pick an ingredient",
+      "missingQtyTitle": "Enter a quantity",
+      "missingUnitTitle": "Enter a unit",
+      "removeConfirmTitle": "Remove from pantry?",
+      "removeConfirm": "Remove"
+    }
+  },
+  "empty": {
+    "headline": "Bare shelves.",
+    "body": "Snap your last grocery haul to fill the pantry in one shot, or add items by hand.",
+    "snapCta": "Snap groceries →",
+    "manualCta": "or + New by hand"
+  }
+}

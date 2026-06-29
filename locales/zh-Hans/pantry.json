@@ -1,0 +1,163 @@
+{
+  "title": "食材库",
+  "header": {
+    "newButton": "+ 新增",
+    "snapButton": "拍照",
+    "items_other": "{{count}} 项",
+    "expiringSuffix": " · {{count}} 项即将过期"
+  },
+  "snapFlash": {
+    "addedOnly": "✓ {{added}} 项已添加到食材库",
+    "addedAndMerged": "✓ {{added}} 项已添加 · {{merged}} 项已合并"
+  },
+  "locationLabels": {
+    "fridge": "冰箱",
+    "freezer": "冷冻",
+    "pantry": "储物柜",
+    "other": "其他"
+  },
+  "sections": {
+    "expiringSoon": "即将过期"
+  },
+  "expiry": {
+    "expiredAgo_other": "已过期 {{count}} 天",
+    "today": "今天过期",
+    "tomorrow": "明天过期",
+    "inDays_other": "{{count}} 天后过期"
+  },
+  "row": {
+    "outBadge": "用完",
+    "useSomeA11y": "使用一些 {{name}}"
+  },
+  "toast": {
+    "used": "已用掉 {{qty}} {{unit}} {{name}}",
+    "undo": "撤销"
+  },
+  "snapReview": {
+    "stackTitle": "审阅",
+    "aiReadFromPhoto": "AI 从你的照片识别",
+    "aiReadFromReceipt": "AI 从你的小票识别",
+    "retake": "重拍",
+    "countHeader_other": "{{count}} 项。",
+    "body": "有不对的地方就调整。保质期已按常规估算 — 给每项选一个存放位置(默认是「其他」)。",
+    "purchasedEyebrow": "购买日期",
+    "todayLabel": "今天",
+    "addByHand": "+ 手动添加",
+    "addAnother": "+ 再加一项",
+    "row": {
+      "remove": "移除",
+      "namePlaceholder": "食材名称",
+      "qtyPlaceholder": "数量",
+      "unitPlaceholder": "单位(如:个、克、毫升)",
+      "expiresEyebrow": "保质日期",
+      "expiresPlaceholder": "设置保质期",
+      "locationEyebrow": "存放位置"
+    },
+    "submit": {
+      "fillOne": "至少填一项",
+      "addN": "添加 {{count}} 项到食材库"
+    },
+    "alerts": {
+      "retakeTitle": "重新拍照?",
+      "retakeBody": "这个界面上的编辑会被舍弃。",
+      "retakeConfirm": "重拍",
+      "nothingTitle": "没有可添加的内容",
+      "nothingBody": "每一行都需要名称和大于 0 的数量。",
+      "addFailedTitle": "无法添加到食材库",
+      "unknownError": "未知错误"
+    }
+  },
+  "snap": {
+    "stackTitle": "拍照添加",
+    "tryAgainStackTitle": "再试一次",
+    "guestGate": {
+      "headline": "拍照,不用手输。",
+      "body": "拍照添加是注册账户才有的功能。保存账户后,一张照片就能把买回来的东西或小票整理进食材库。",
+      "cta": "保存账户解锁此功能 →"
+    },
+    "eyebrow": "拍照添加",
+    "headline": "从购物袋到食材库。",
+    "modeHints": {
+      "haul": "把买回来的东西摊在台面上,拍一张全景照。我们会把每一样列出来。",
+      "receipt": "把小票平放在干净的桌面上拍照。我们会提取每一行食材。"
+    },
+    "modeLabels": {
+      "haul": "采购",
+      "receipt": "小票"
+    },
+    "sourceEyebrow": "来源",
+    "takePhoto": "拍一张",
+    "pickFromLibrary": "从相册选择",
+    "addByHand": "← 改为手动添加",
+    "empty": {
+      "eyebrowHaul": "没能识别出任何物品",
+      "eyebrowReceipt": "没找到任何条目",
+      "headline": "嗯 — 不太清晰。",
+      "hintHaul": "试试光线更好的环境、减少物品重叠,或者只拍一部分。",
+      "hintReceipt": "确保小票对焦清晰、字迹可读、没有反光。",
+      "quotaReassurance": "这次没有计入你的 AI 额度 — 可以再试一次。",
+      "retryPhoto": "用这张照片再试一次",
+      "chooseAnother": "换一张照片"
+    },
+    "busy": {
+      "eyebrowHaul": "正在识别你的采购",
+      "eyebrowReceipt": "正在识别你的小票",
+      "headline": "稍等一下…",
+      "body": "我们正在识别每一样、估算数量、并预测保质期。大约需要五秒。"
+    },
+    "alerts": {
+      "photoUnavailableTitle": "无法读取照片",
+      "photoUnavailableBody": "无法读取这张照片的数据。再试一次,或者换一张照片。",
+      "cameraDeniedTitle": "相机权限被拒",
+      "cameraDeniedBody": "请在「设置」中允许 RecipeGen 使用相机,再回来重试。",
+      "libraryDeniedTitle": "相册权限被拒",
+      "libraryDeniedBody": "请在「设置」中允许 RecipeGen 访问你的相册,再回来重试。",
+      "settingsAction": "前往设置",
+      "extractFailedTitleHaul": "无法识别物品",
+      "extractFailedTitleReceipt": "无法解析小票",
+      "extractFailedBody": "{{detail}}\n\n这次没有计入你的月度额度。",
+      "extractFailedFallback": "稍后再试。"
+    }
+  },
+  "screens": {
+    "newTitle": "加入食材库",
+    "submitNew": "添加",
+    "submitEdit": "保存修改",
+    "notFound": "找不到这一项。",
+    "addFailedTitle": "无法添加",
+    "saveFailedTitle": "无法保存",
+    "deleteFailedTitle": "删除失败",
+    "unknownError": "未知错误"
+  },
+  "form": {
+    "ingredientEyebrow": "食材",
+    "ingredientPlaceholder": "选择一种食材...",
+    "quantityEyebrow": "数量",
+    "quantityPlaceholder": "0",
+    "unitEyebrow": "单位",
+    "unitOtherChip": "其他…",
+    "unitCustomPlaceholder": "自定义单位",
+    "unitBackToChip": "常用",
+    "locationEyebrow": "存放位置",
+    "locationOtherPlaceholder": "描述(如:车库的冰箱)",
+    "purchasedEyebrow": "购买日期",
+    "expiresEyebrow": "保质日期",
+    "expiresAutoHint": "按 {{days}} 天保质期估算",
+    "notesEyebrow": "备注",
+    "notesPlaceholder": "可选",
+    "removeItem": "移除这一项",
+    "alerts": {
+      "missingIngredientTitle": "请选择一种食材",
+      "missingQtyTitle": "请输入数量",
+      "missingUnitTitle": "请输入单位",
+      "removeConfirmTitle": "从食材库移除?",
+      "removeConfirm": "移除"
+    }
+  },
+  "empty": {
+    "headline": "货架空空。",
+    "body": "拍一张最近的采购照片,一次性填满食材库,或者手动添加。",
+    "snapCta": "拍照添加 →",
+    "manualCta": "或者 + 手动新增"
+  }
+}

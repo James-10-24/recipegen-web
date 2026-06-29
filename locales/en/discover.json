@@ -1,0 +1,50 @@
+{
+  "title": "Discover",
+  "subtitle": "Public recipes from the community",
+  "guestGate": {
+    "headline": "A library of cooks.",
+    "body": "The community feed — recipes you can browse, search, and save into your own library — opens up once you save your account. No card required, just an email and password.",
+    "cta": "Save my account to browse →"
+  },
+  "searchPlaceholder": "Search public recipes…",
+  "filters": {
+    "allLanguages": "All languages",
+    "allCategories": "All"
+  },
+  "categoryLabels": {
+    "Breakfast": "Breakfast",
+    "Lunch": "Lunch",
+    "Dinner": "Dinner",
+    "Snack": "Snack",
+    "Dessert": "Dessert",
+    "Drink": "Drink"
+  },
+  "empty": {
+    "noMatchesHeadline": "No matches.",
+    "quietShelfHeadline": "A quiet shelf.",
+    "tryDifferentSearch": "Try a different search.",
+    "noPublicInCategory": "No public {{category}} recipes yet.",
+    "noPublicEver": "No public recipes yet — be the first to share one.",
+    "showAllCategories": "Show all categories →",
+    "newRecipe": "+ New recipe"
+  },
+  "card": {
+    "savedBadge": "✓ Saved",
+    "by": "By",
+    "anonymousAuthor": "the community",
+    "meta_one": "· {{count}} serving",
+    "meta_other": "· {{count}} servings",
+    "prepMin": " · {{min}} min prep"
+  },
+  "alerts": {
+    "thisUserFallback": "this user",
+    "blockTitle": "Block {{name}}?",
+    "blockBody": "You won't see their recipes in Discover. You can unblock them later in Settings.",
+    "blockConfirm": "Block",
+    "blockFailedTitle": "Could not block",
+    "unknownError": "Unknown error",
+    "moreReportRecipe": "Report this recipe",
+    "moreReportAuthor": "Report the author",
+    "moreBlockAuthor": "Block author"
+  }
+}

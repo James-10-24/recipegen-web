@@ -1,0 +1,166 @@
+{
+  "title": "设置",
+  "guest": {
+    "eyebrow": "游客模式",
+    "headline": "留住你的食谱。",
+    "body": "你正在以无账户方式使用 RecipeGen。添加邮箱和密码后,你创建的一切都会继续保留。游客最多保存 10 份食谱,无法浏览或发布到社区食谱库。",
+    "saveAccountLink": "保存我的账户 →"
+  },
+  "subscription": {
+    "section": "订阅",
+    "brand": "Pantry Pro",
+    "planAnnual": "年度套餐",
+    "planMonthly": "月度套餐",
+    "planCancelled": "已取消 — 到期前仍可访问",
+    "renews": "{{date}}续订",
+    "expires": "{{date}}到期",
+    "bonusCredits": "可用奖励额度 {{count}} 次",
+    "manageLink": "管理订阅 →",
+    "freeLabel": "免费版",
+    "freeHeadline": "多做饭、少浪费。",
+    "freeBody": "升级 Pantry Pro 可获得不限量食谱、不限量 AI,以及购物清单的食材浪费提醒。",
+    "seePro": "了解 Pro →",
+    "freeUsage": "本月已用 {{used}} / {{cap}} 次 AI",
+    "freeUsageCredits": " · {{count}} 次额度",
+    "restoring": "恢复中…",
+    "restoreLink": "恢复购买",
+    "alerts": {
+      "restoredTitle": "Pantry Pro 已恢复",
+      "restoredBody": "你的订阅已重新生效。App 其他部分可能需要几秒钟刷新。",
+      "nothingTitle": "没有可恢复的购买",
+      "nothingBody": "在当前 Apple ID 上没有找到过往购买记录。如果你用其他 Apple ID 购买了 RecipeGen,请在 iPhone 设置 → Apple ID 切换账户后重试。",
+      "inactiveTitle": "订阅未生效",
+      "inactiveBody": "我们找到了过往的购买记录,但订阅当前未生效。如果订阅在另一个 RecipeGen 账户上,请先退出再用那个账户登录,然后再尝试恢复。",
+      "restoreFailedTitle": "恢复失败",
+      "restoreFailedFallback": "请稍后再试。",
+      "manageUnavailableTitle": "订阅管理暂不可用",
+      "manageUnavailableBody": "请稍后再试,或重新启动 App。",
+      "manageFailedTitle": "无法打开订阅管理",
+      "manageFailedFallback": "请稍后再试。"
+    }
+  },
+  "profile": {
+    "section": "个人资料",
+    "displayNameLabel": "显示名称",
+    "displayNamePlaceholder": "我们该怎么称呼你?",
+    "counter": "{{count}}/{{max}}",
+    "saveName": "保存名称",
+    "savedFlash": "✓ 已保存",
+    "hint": "公开你发布的食谱时会显示。",
+    "alerts": {
+      "saveFailedTitle": "无法保存",
+      "saveFailedFallback": "未知错误"
+    }
+  },
+  "household": {
+    "section": "家庭人数",
+    "label": "你在为几人下厨",
+    "save": "保存",
+    "savedFlash": "✓ 已保存",
+    "hint": "用于换算食谱份量和购物清单。大人和小孩都算。"
+  },
+  "language": {
+    "section": "语言",
+    "label": "App 语言",
+    "hint": "你创建或保存的食谱仍保持原语言。这里只切换界面语言。"
+  },
+  "account": {
+    "section": "账户",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "changePassword": "修改密码",
+    "passwordFlash": "✓ 已更新",
+    "showIntro": "再看一次介绍",
+    "signOut": "退出登录",
+    "endGuestSession": "结束游客会话",
+    "alerts": {
+      "signOutTitle": "退出登录?",
+      "signOutConfirm": "退出登录",
+      "endGuestTitle": "结束游客会话?",
+      "endGuestBody": "你的游客数据会保留在服务器上,但本设备将无法访问。要保留它,请先保存账户。",
+      "endGuestConfirm": "结束会话"
+    }
+  },
+  "blocked": {
+    "section": "已屏蔽用户",
+    "emptyHeadline": "暂无屏蔽。",
+    "emptyHint": "在任意公开食谱的「⋯」菜单里屏蔽作者。",
+    "unnamedUser": "未命名用户",
+    "blockedAt": "{{time}}屏蔽",
+    "unblockButton": "取消屏蔽",
+    "alerts": {
+      "confirmTitle": "取消屏蔽 {{name}}?",
+      "confirmTitleFallback": "取消屏蔽这位用户?",
+      "confirmBody": "TA 的公开食谱将重新出现在 Discover 中。",
+      "confirmAction": "取消屏蔽",
+      "failedTitle": "无法取消屏蔽",
+      "failedFallback": "未知错误"
+    }
+  },
+  "reports": {
+    "section": "你的举报",
+    "emptyHeadline": "暂无举报。",
+    "emptyHint": "在任意公开食谱的「⋯」菜单里提交举报后,会出现在这里。",
+    "deletedRecipe": "(已删除的食谱)",
+    "userSubject": "某位用户",
+    "withdrawButton": "撤回",
+    "slaHint": "我们会在 24 小时内审核举报。",
+    "reasons": {
+      "inappropriate": "不适宜",
+      "spam": "垃圾内容",
+      "incorrect": "信息错误",
+      "other": "其他"
+    },
+    "statuses": {
+      "pending": "审核中",
+      "reviewed": "已审核",
+      "dismissed": "已驳回",
+      "actioned": "已处理"
+    },
+    "alerts": {
+      "withdrawTitle": "撤回举报?",
+      "withdrawBody": "我们会从审核队列中移除这条举报。如果需要,你可以稍后再次提交。",
+      "withdrawConfirm": "撤回",
+      "withdrawFailedTitle": "无法撤回",
+      "withdrawFailedFallback": "未知错误"
+    }
+  },
+  "dangerZone": {
+    "section": "危险操作",
+    "guestBody": "永久删除这个游客会话以及其下所有食谱、计划和食材库条目。此操作无法撤销。",
+    "userBody": "永久删除你的账户以及账户下保存的一切。此操作无法撤销。",
+    "deleteGuestData": "删除游客数据",
+    "deleteAccount": "删除账户",
+    "alerts": {
+      "deleteStartTitle": "删除你的账户?",
+      "deleteStartBody": "此操作会永久删除你的账户、食谱、计划、食材库、购物清单和烹饪记录。无法撤销。",
+      "deleteStartConfirm": "继续",
+      "deleteFailedTitle": "无法删除账户",
+      "deleteFailedFallback": "未知错误"
+    }
+  },
+  "deleteModal": {
+    "eyebrow": "最终确认",
+    "headlineGuest": "输入 DELETE 以确认",
+    "headlineUser": "输入 DELETE 并输入密码",
+    "body": "点击下方的「删除」后,你的账户以及账户下保存的一切都会被永久删除。",
+    "typeDeleteLabel": "输入 DELETE",
+    "typeDeletePlaceholder": "DELETE",
+    "passwordLabel": "你的密码",
+    "passwordPlaceholder": "••••••••",
+    "cancel": "取消",
+    "deleteButton": "删除",
+    "mismatchTitle": "确认不匹配",
+    "mismatchBody": "账户未删除。请输入全大写的 DELETE 以确认。",
+    "noEmailError": "无法验证你的账户 — 请先退出再重新登录,然后再试。",
+    "noPasswordError": "请输入密码以确认。",
+    "wrongPasswordError": "密码错误 — 请重试。"
+  },
+  "relTime": {
+    "today": "今天",
+    "yesterday": "昨天",
+    "daysAgo": "{{count}} 天前",
+    "monthsAgo": "{{count}} 个月前",
+    "yearsAgo": "{{count}} 年前"
+  }
+}

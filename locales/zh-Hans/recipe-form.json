@@ -1,0 +1,171 @@
+{
+  "draft": {
+    "restoredLabel": "已恢复",
+    "restoredBody": "{{age}}的未保存更改。",
+    "discardLink": "舍弃草稿 →",
+    "discardAlertTitle": "舍弃草稿?",
+    "discardAlertBody": "未保存的更改将会丢失。",
+    "discardAlertConfirm": "舍弃"
+  },
+  "title": {
+    "label": "名称",
+    "requiredHint": "· 必填",
+    "placeholder": "例如:蒜油意面"
+  },
+  "description": {
+    "label": "简介",
+    "placeholder": "选填 · 这道菜的特别之处?"
+  },
+  "category": {
+    "label": "分类"
+  },
+  "language": {
+    "label": "食谱语言",
+    "hint": "已自动识别 · 点击切换"
+  },
+  "tags": {
+    "label": "标签",
+    "counter": "选填 · {{count}}/{{max}}",
+    "placeholder": "添加标签(纯素、快手、…)",
+    "addButton": "添加"
+  },
+  "visibility": {
+    "label": "可见性",
+    "private": "私密",
+    "public": "公开",
+    "publicHint": "任何人都能搜到并保存副本。",
+    "privateHint": "只有你能看到。",
+    "moderationHint": "公开食谱会先经过社区规范审核,通过后才会出现在 Discover。",
+    "downgradeWarning": "提醒:已被别人保存的副本属于他们 — 转回私密不会收回那些副本。",
+    "guestLockedLink": "保存账户后即可发布食谱 →",
+    "noNameLockedLink": "设置显示名称后即可发布食谱 →"
+  },
+  "servings": {
+    "label": "份数"
+  },
+  "prep": {
+    "label": "准备(分钟)"
+  },
+  "cook": {
+    "label": "烹饪(分钟)"
+  },
+  "ingredients": {
+    "label": "食材",
+    "atLeastOne": "· 至少一项",
+    "readyCount": "{{matched}} 已就绪",
+    "pendingCount": " · {{pending}} 待处理",
+    "removeAllPending": "移除所有待处理",
+    "addButton": "+ 添加食材",
+    "pending": {
+      "label": "需要选择食材",
+      "pickButton": "选择或添加食材",
+      "suggestedHint": "建议:{{qty}} {{unit}}"
+    },
+    "row": {
+      "fromImport": "来自:\"{{raw}}\"",
+      "qtyPlaceholder": "用量",
+      "unitPlaceholder": "单位",
+      "notesPlaceholder": "备注(例如:切碎)",
+      "removeButton": "移除"
+    },
+    "removeAllAlert": {
+      "title": "移除所有待处理食材?",
+      "body_other": "将清除 {{count}} 条未能与目录匹配的食材。",
+      "confirm": "移除"
+    },
+    "duplicateAlert": {
+      "title": "已添加",
+      "body": "{{name}} 已在这份食谱中。"
+    },
+    "pendingValidationAlert": {
+      "title_other": "{{count}} 项食材待处理",
+      "body": "请逐一选择或添加食材,或先移除它们。"
+    }
+  },
+  "instructions": {
+    "label": "步骤",
+    "emptyHint": "还没有步骤。点击下方添加第一步。",
+    "stepLabel": "步骤 {{n}}",
+    "stepRemoveButton": "移除",
+    "stepPlaceholder": "描述这一步…",
+    "addStepButton": "+ 添加步骤"
+  },
+  "validation": {
+    "missingTitleTitle": "缺少名称",
+    "missingTitleBody": "请输入食谱名称。",
+    "invalidServingsTitle": "份数无效",
+    "invalidServingsBody": "份数至少为 1。",
+    "invalidQtyTitle": "用量无效",
+    "invalidQtyBody": "请为 {{name}} 输入有效用量。"
+  },
+  "keyboardDone": "完成",
+  "screens": {
+    "newTitle": "新建食谱",
+    "editTitle": "编辑食谱",
+    "submitNew": "创建食谱",
+    "submitEdit": "保存修改",
+    "notFound": "找不到这份食谱。",
+    "createFailedTitle": "无法创建食谱",
+    "saveFailedTitle": "无法保存",
+    "unknownError": "未知错误"
+  },
+  "guestAiLock": {
+    "eyebrow": "AI 功能未解锁",
+    "body": "网址导入和 AI 生成是注册账户的功能。你可以继续手动输入食谱。",
+    "cta": "保存账户解锁 AI →"
+  },
+  "aiDisclosure": {
+    "extractedByAi": "由 AI 提取",
+    "generatedByAi": "由 AI 生成",
+    "reviewBeforeSaving": "保存前请审阅。"
+  },
+  "replaceImport": {
+    "title": "替换你的修改?",
+    "body": "导入的食谱会覆盖表单里现有的全部内容。",
+    "confirm": "替换"
+  },
+  "importedSourceChip": {
+    "generatedByAi": "由 AI 生成",
+    "extractedFromPaste": "从粘贴文本提取",
+    "importedAiFrom": "由 AI 从 {{host}} 导入",
+    "importedFrom": "从 {{host}} 导入",
+    "unknownHost": "未知",
+    "clear": "清除 ×"
+  },
+  "importBanner": {
+    "eyebrow": "从这里开始…",
+    "modes": {
+      "url": "网址",
+      "prompt": "描述",
+      "text": "粘贴文本"
+    },
+    "url": {
+      "prompt": "粘贴一个链接,剩下的我们来处理。",
+      "placeholder": "https://…"
+    },
+    "prompt": {
+      "prompt": "说说你想吃什么,我们帮你写出来。",
+      "placeholder": "比如:快手版蒜香柠檬鸡"
+    },
+    "text": {
+      "prompt": "粘贴一份食谱,我们来梳理结构。",
+      "placeholder": "粘贴完整的食谱 — 食材、做法,全都可以。"
+    },
+    "counter": "{{length}}/{{max}}",
+    "countsAsOp": "占用一次 AI 额度",
+    "errors": {
+      "urlPartial": "无法从这个链接抓到完整的食谱。换一个链接,或者手动粘贴试试。",
+      "promptPartial": "这次没生成出完整的食谱。换个更具体的描述再试试。",
+      "textPartial": "无法从这段文本里抓到完整的食谱。粘贴更完整一些的版本试试。",
+      "urlFailed": "无法导入这个链接。检查一下链接,或者手动粘贴。",
+      "promptFailed": "这次没能生成出来。再试一次,或者换个说法。",
+      "textFailed": "无法从这段文本里提取食谱。粘贴更完整一些再试试。",
+      "didntCount": "这次没有计入你的月度额度。"
+    },
+    "cta": {
+      "url": "导入 →",
+      "prompt": "生成 →",
+      "text": "提取 →"
+    }
+  }
+}

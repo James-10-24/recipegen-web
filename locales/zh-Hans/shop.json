@@ -1,0 +1,98 @@
+{
+  "history": {
+    "stackTitle": "历史清单",
+    "emptyHeadline": "还没有历史清单。",
+    "emptyBody": "把清单标记为已完成后,会出现在这里。",
+    "rangeLine": "{{start}} — {{end}}",
+    "summary_other": "{{count}} 项 · 完成于 {{when}}"
+  },
+  "title": "购物",
+  "pastListsLink": "历史清单 →",
+  "subtitle": {
+    "noList": "智能购物清单",
+    "pastRange": "上一份清单涵盖的是上周",
+    "rangeAndProgress": "{{range}} · 已购 {{checked}}/{{total}}"
+  },
+  "presets": {
+    "thisWeek": "本周",
+    "nextWeek": "下周",
+    "forEyebrow": "时段"
+  },
+  "categoryLabels": {
+    "produce": "蔬果",
+    "dairy": "乳制品",
+    "meat": "肉类",
+    "seafood": "海鲜",
+    "grain": "谷物",
+    "pantry": "食品柜",
+    "other": "其他"
+  },
+  "waste": {
+    "highLabel": "可能浪费",
+    "mediumLabel": "或许浪费",
+    "reasonShelfBulk": "大包装,保质期仅 {{days}} 天",
+    "reasonBulkNoShelf": "大包装 · 比所需多 {{ratio}}",
+    "reasonShelfRatio": "比你会用到的多 {{ratio}}",
+    "reasonNoShelfGenerous": "包装偏大"
+  },
+  "row": {
+    "removeSwipe": "移除",
+    "inPantry": "✓ 食材库已有",
+    "needPlain": "需要 {{qty}} {{unit}}",
+    "needWithPantry": "需要 {{qty}} {{unit}} · 食材库可补 {{pantry}}",
+    "extraUnclear": "+ 数量不明的额外补充",
+    "editedBadge": "已修改"
+  },
+  "noList": {
+    "headline": "暂无清单。",
+    "body": "根据你的餐计划生成一份清单。我们会汇总所需食材、扣除食材库现有的份量、并向上取整到常见包装规格。",
+    "generate": "生成清单",
+    "generating": "生成中…",
+    "nothingPlanned": "还没有餐计划? → 去 Plan",
+    "rangeFooter": "{{start}} — {{end}}"
+  },
+  "pastRange": {
+    "headline": "新的一周。",
+    "body": "上周的清单已经过去 — 给接下来的几天生成一份新清单。",
+    "ctaIdle": "为本周生成 →",
+    "ctaPending": "生成中…",
+    "viewArchived": "查看上周清单 ›",
+    "newRange": "新时段:{{start}} — {{end}}"
+  },
+  "active": {
+    "regenerate": "重新生成",
+    "regeneratePending": "重新生成中…",
+    "staleHeadline": "清单可能已过期",
+    "staleBody": "自生成以来,你的餐计划或食材库有过改动。",
+    "staleRegen": "重新生成 ›",
+    "emptyHeadline": "没东西要买。",
+    "emptyBody": "要么这个时段没有餐计划,要么食材库已经够用了。",
+    "checkPlan": "去查看餐计划 →",
+    "discardList": "舍弃清单",
+    "markComplete": "标记为已完成"
+  },
+  "editModal": {
+    "eyebrow": "修改数量",
+    "suggested": "建议:{{qty}} {{unit}}",
+    "overrideNote": "这一项已被修改。重新生成时会保留你的数值。",
+    "cancel": "取消",
+    "save": "保存",
+    "saving": "保存中…"
+  },
+  "alerts": {
+    "setToRemoveTitle": "想移除这一项?",
+    "setToRemoveBody": "把数量设为 0 等同于移除这一项 — 直接向左滑动整行来移除。",
+    "saveFailedTitle": "无法保存",
+    "generateFailedTitle": "无法生成",
+    "unknownError": "未知错误",
+    "regenTitle": "重新生成清单?",
+    "regenBody": "已购买的项目会保留,其余的会替换。",
+    "regenConfirm": "重新生成",
+    "discardTitle": "舍弃这份清单?",
+    "discardConfirm": "舍弃"
+  },
+  "toast": {
+    "removed": "已移除 {{name}}",
+    "undo": "撤销"
+  }
+}

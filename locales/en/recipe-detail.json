@@ -1,0 +1,121 @@
+{
+  "header": {
+    "share": "Share",
+    "shareA11y": "Share recipe",
+    "edit": "Edit",
+    "moreActionsA11y": "More actions"
+  },
+  "error": {
+    "notFound": "Recipe not found."
+  },
+  "categoryLabels": {
+    "Breakfast": "Breakfast",
+    "Lunch": "Lunch",
+    "Dinner": "Dinner",
+    "Snack": "Snack",
+    "Dessert": "Dessert",
+    "Drink": "Drink"
+  },
+  "meta": {
+    "servings_one": "{{count}} serving",
+    "servings_other": "{{count}} servings",
+    "prepMin": "{{min}} min prep",
+    "cookMin": "{{min}} min cook"
+  },
+  "cookStats": {
+    "cookedOnce": "Cooked once",
+    "cookedTimes": "Cooked {{count}} times",
+    "lastSuffix": " · last {{when}}"
+  },
+  "relTime": {
+    "today": "today",
+    "yesterday": "yesterday",
+    "daysAgo": "{{count}} days ago",
+    "weeksAgo_one": "{{count}} week ago",
+    "weeksAgo_other": "{{count}} weeks ago",
+    "monthsAgo_one": "{{count}} month ago",
+    "monthsAgo_other": "{{count}} months ago",
+    "yearsAgo_one": "{{count}} year ago",
+    "yearsAgo_other": "{{count}} years ago"
+  },
+  "byline": {
+    "by": "By",
+    "savedFrom": "Saved from",
+    "privateRecipeFallback": "a private recipe",
+    "byAuthor": "by",
+    "sourceLink": "Source: {{host}} →"
+  },
+  "owner": {
+    "publicVisible": "Public · visible in Discover",
+    "publishRefused": "Publish refused · edit and try again"
+  },
+  "cta": {
+    "iCookedThis": "I cooked this",
+    "openSavedCopy": "✓ Open my saved copy",
+    "saveToMine": "Save to my recipes",
+    "deleteRecipe": "Delete recipe"
+  },
+  "sections": {
+    "ingredients": "Ingredients",
+    "instructions": "Instructions",
+    "emptyIngredients": "No ingredients yet."
+  },
+  "coverage": {
+    "covered": "✓ In pantry: {{qty}} {{unit}}",
+    "short": "Short {{qty}} {{unit}}",
+    "unitMismatch": "In pantry (different unit — check manually)",
+    "missing": "Not in pantry"
+  },
+  "toasts": {
+    "saved": "Saved to your recipes",
+    "savedView": "View",
+    "cookedTitle": "Cooked {{title}}",
+    "undo": "Undo",
+    "undoing": "Undoing…"
+  },
+  "alerts": {
+    "undoFailedTitle": "Couldn't undo",
+    "unknownError": "Unknown error",
+    "deleteTitle": "Delete recipe?",
+    "deleteBody": "This cannot be undone.",
+    "deleteConfirm": "Delete",
+    "deleteFailedTitle": "Delete failed",
+    "saveFailedTitle": "Could not save",
+    "blockTitle": "Block {{name}}?",
+    "blockBody": "You won't see their recipes in Discover. You can unblock them later in Settings.",
+    "blockConfirm": "Block",
+    "blockedTitle": "Blocked {{name}}",
+    "blockedBody": "Their recipes are hidden from Discover. You can unblock them later in Settings.",
+    "blockFailedTitle": "Could not block",
+    "thisUserFallback": "this user",
+    "moreActionsTitle": "Actions",
+    "moreReportRecipe": "Report this recipe",
+    "moreReportAuthor": "Report the author",
+    "moreBlockAuthor": "Block author"
+  },
+  "cookSheet": {
+    "title": "Log cook",
+    "subtitle": "{{recipeTitle}} · {{servings}} servings",
+    "fromPlanMeals_one": "From your plan · 1 meal",
+    "fromPlanMeals_other": "From your plan · {{count}} meals",
+    "emptyIngredients": "This recipe has no ingredients to deduct.",
+    "needLine": "Need {{required}} {{unit}} · Pantry {{pantry}} {{unit}}",
+    "shortSuffix": " · Short {{short}} {{unit}}",
+    "unconvertible_one": "{{count}} pantry item in a different unit (no density known)",
+    "unconvertible_other": "{{count}} pantry items in a different unit (no density known)",
+    "useEyebrow": "Use",
+    "confirmCta": "I cooked this",
+    "alerts": {
+      "overDrawTitle": "Over-drawing pantry",
+      "overDrawBody": "Tried to use {{used}} {{unit}} of {{name}}, only {{available}} {{unit}} available.",
+      "logFailedTitle": "Could not log cook"
+    }
+  },
+  "share": {
+    "serves": "Serves {{count}}",
+    "ingredientsHeading": "Ingredients",
+    "instructionsHeading": "Instructions",
+    "prepMin": "{{min}} min prep",
+    "cookMin": "{{min}} min cook"
+  }
+}

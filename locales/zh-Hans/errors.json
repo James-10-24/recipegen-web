@@ -1,0 +1,21 @@
+{
+  "aiCap": {
+    "alertTitle": "本月免费 AI 已用 {{cap}}/{{cap}} 次",
+    "alertBody": "升级 Pantry Pro 获得不限量 AI,或购买 10 次额度($1.99) — 永久有效。",
+    "alertCancel": "取消",
+    "alertSeeOptions": "查看选项",
+    "blockEyebrow": "AI 额度已用完",
+    "genericHeadline": "本月的 AI 额度已用完。",
+    "snapHeadline": "拍照是 AI 功能 — 本月额度已用完。",
+    "importHeadline": "网址导入和 AI 生成都是 AI 功能 — 本月额度已用完。",
+    "blockBody": "{{cap}} 次免费额度会在每月 1 日重置。Pantry Pro 取消上限,AI 不限量。",
+    "seeOptions": "查看你的选项 →",
+    "quotaHintLeft": "本月还剩 {{count}} 次"
+  },
+  "recipeCap": {
+    "alertTitle": "你的食谱架满了",
+    "alertBody": "免费账户最多保存 {{cap}} 份自己创建的食谱。从 Discover 保存的副本不计入。Pantry Pro 取消这个上限,也解除其他所有限制。",
+    "alertCancel": "取消",
+    "alertSeePro": "了解 Pro"
+  }
+}

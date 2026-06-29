@@ -1,0 +1,42 @@
+{
+  "title": "Recipes",
+  "settingsLink": "Settings",
+  "newButton": "+ New",
+  "guestCounter": "Guest · {{count}} / {{cap}} recipes · ",
+  "freeCounter": "Free · {{count}} / {{cap}} created · ",
+  "saveAccountLink": "Save my account",
+  "liftCapLink": "Lift the cap",
+  "loadError": "Could not load recipes: {{message}}",
+  "categoryAll": "All",
+  "categoryLabels": {
+    "Breakfast": "Breakfast",
+    "Lunch": "Lunch",
+    "Dinner": "Dinner",
+    "Snack": "Snack",
+    "Dessert": "Dessert",
+    "Drink": "Drink"
+  },
+  "row": {
+    "pantryCoverage": "{{covered}}/{{total}} in pantry",
+    "servings_one": "{{count}} serving",
+    "servings_other": "{{count}} servings",
+    "prepMin": "{{min}} min prep",
+    "cookMin": "{{min}} min cook"
+  },
+  "guestCapAlert": {
+    "title": "Guest limit reached",
+    "body": "Guests can keep up to {{cap}} recipes. Save your account to add more.",
+    "saveAccount": "Save my account"
+  },
+  "emptyFiltered": {
+    "headline": "Nothing here.",
+    "body": "No {{category}} recipes yet.",
+    "showAll": "Show all recipes →"
+  },
+  "emptyAll": {
+    "headline": "An empty shelf.",
+    "body": "Add your first recipe by hand, paste a URL to import, or generate one from a craving.",
+    "newRecipe": "+ New recipe",
+    "browseDiscover": "or browse Discover →"
+  }
+}

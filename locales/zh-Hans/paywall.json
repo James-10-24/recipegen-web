@@ -1,0 +1,14 @@
+{
+  "unavailableTitle": "订阅暂不可用",
+  "unavailableBody": "请稍后再试,或重新启动 App。",
+  "purchaseFailedTitle": "购买失败",
+  "purchaseFailedFallback": "请重试或恢复购买。",
+  "restore": {
+    "nothingTitle": "没有可恢复的购买",
+    "nothingBody": "在当前 Apple ID 上没有找到过往购买记录。如果你用其他 Apple ID 购买了 RecipeGen,请在 iPhone 设置 → Apple ID 切换账户后重试。",
+    "inactiveTitle": "订阅未生效",
+    "inactiveBody": "我们找到了过往的购买记录,但订阅当前未生效。请登录拥有该订阅的 RecipeGen 账户,然后再尝试恢复。",
+    "errorTitle": "恢复失败",
+    "errorFallback": "请稍后再试。"
+  }
+}

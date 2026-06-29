@@ -1,0 +1,100 @@
+{
+  "cancel": "Cancel",
+  "ok": "OK",
+  "save": "Save",
+  "discard": "Discard",
+  "remove": "Remove",
+  "done": "Done",
+  "dates": {
+    "weekdayShort": {
+      "sun": "SUN",
+      "mon": "MON",
+      "tue": "TUE",
+      "wed": "WED",
+      "thu": "THU",
+      "fri": "FRI",
+      "sat": "SAT"
+    },
+    "monthShort": {
+      "jan": "JAN",
+      "feb": "FEB",
+      "mar": "MAR",
+      "apr": "APR",
+      "may": "MAY",
+      "jun": "JUN",
+      "jul": "JUL",
+      "aug": "AUG",
+      "sep": "SEP",
+      "oct": "OCT",
+      "nov": "NOV",
+      "dec": "DEC"
+    }
+  },
+  "dateField": {
+    "selectDate": "Select a date",
+    "clear": "Clear"
+  },
+  "ingredientPicker": {
+    "title": "Add ingredient",
+    "searchPlaceholder": "Search ingredients...",
+    "rowSuffixYours": " · yours",
+    "empty": {
+      "headline": "Not in the shelf yet.",
+      "body": "Add “{{name}}” as a new ingredient below."
+    },
+    "newSection": {
+      "eyebrow": "Add “{{name}}” as a new ingredient",
+      "addNew": "Add new ingredient",
+      "refineWithAi": "Refine with AI ↗"
+    },
+    "suggestion": {
+      "eyebrow": "AI suggestion",
+      "metaLine": "{{category}} · {{unit}}",
+      "keepsSuffix": " · keeps {{days}}d",
+      "alsoKnownAs": "Also known as: {{aliases}}",
+      "useSuggestion": "Use suggestion",
+      "stickWith": "Stick with “{{name}}”"
+    },
+    "alerts": {
+      "dupeTitle": "Did you mean “{{name}}”?",
+      "dupeBody": "Using the existing entry keeps recipes and pantry items linked.",
+      "useExisting": "Use “{{name}}”",
+      "createAnyway": "Create “{{name}}”",
+      "addFailedTitle": "Could not add ingredient",
+      "refineFailedTitle": "Could not refine",
+      "unknownError": "Unknown error"
+    }
+  },
+  "reportSheet": {
+    "headerRecipe": "Report this recipe",
+    "headerUser": "Report this user",
+    "unnamedUser": "Unnamed user",
+    "reasonEyebrow": "Reason",
+    "reasons": {
+      "inappropriate": "Inappropriate",
+      "spam": "Spam",
+      "incorrect": "Incorrect or misleading",
+      "other": "Other"
+    },
+    "notesEyebrow": {
+      "other": "Tell us what happened",
+      "optional": "Anything else? (optional)"
+    },
+    "notesPlaceholder": {
+      "other": "A short description helps moderators act",
+      "optional": "What should we know?"
+    },
+    "notesCounter": "{{length}}/{{max}}",
+    "successFlash": "✓ Sent — thanks",
+    "submit": "Send report",
+    "slaHint": "We review reports within 24 hours and act on those that violate our community guidelines.",
+    "alerts": {
+      "rateLimitTitle": "Slow down a bit",
+      "rateLimitBody": "You've sent enough reports for today. Try again tomorrow.",
+      "dupeTitle": "Already reported",
+      "dupeBody": "Moderators are reviewing your earlier report against this — no need to send another.",
+      "sendFailedTitle": "Could not send report",
+      "unknownError": "Unknown error"
+    }
+  }
+}

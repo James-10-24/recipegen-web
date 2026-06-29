@@ -1,0 +1,18 @@
+{
+  "brandTag": "RecipeGen",
+  "skip": "跳过",
+  "continue": "继续",
+  "getStarted": "开始使用",
+  "signInLink": "已有账户?登录 →",
+  "guestErrorTitle": "无法开启游客会话",
+  "guestErrorBody": "请重试,或用邮箱登录 — 完成后会回到这个界面。",
+  "framing": {
+    "eyebrow": "来自 IdeaGen",
+    "tagline": "规划餐食、管理食材库,不再过度采购。"
+  },
+  "activation": {
+    "eyebrow": "快速设置",
+    "headline": "你在为几人下厨?",
+    "hint": "大人和小孩都算。之后可以随时在设置里修改。"
+  }
+}

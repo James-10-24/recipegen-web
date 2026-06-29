@@ -1,0 +1,100 @@
+{
+  "cancel": "取消",
+  "ok": "好的",
+  "save": "保存",
+  "discard": "舍弃",
+  "remove": "移除",
+  "done": "完成",
+  "dates": {
+    "weekdayShort": {
+      "sun": "周日",
+      "mon": "周一",
+      "tue": "周二",
+      "wed": "周三",
+      "thu": "周四",
+      "fri": "周五",
+      "sat": "周六"
+    },
+    "monthShort": {
+      "jan": "1 月",
+      "feb": "2 月",
+      "mar": "3 月",
+      "apr": "4 月",
+      "may": "5 月",
+      "jun": "6 月",
+      "jul": "7 月",
+      "aug": "8 月",
+      "sep": "9 月",
+      "oct": "10 月",
+      "nov": "11 月",
+      "dec": "12 月"
+    }
+  },
+  "dateField": {
+    "selectDate": "选择日期",
+    "clear": "清除"
+  },
+  "ingredientPicker": {
+    "title": "添加食材",
+    "searchPlaceholder": "搜索食材...",
+    "rowSuffixYours": " · 你的",
+    "empty": {
+      "headline": "目录里还没有。",
+      "body": "在下方将「{{name}}」作为新食材添加。"
+    },
+    "newSection": {
+      "eyebrow": "将「{{name}}」作为新食材添加",
+      "addNew": "添加新食材",
+      "refineWithAi": "用 AI 优化 ↗"
+    },
+    "suggestion": {
+      "eyebrow": "AI 建议",
+      "metaLine": "{{category}} · {{unit}}",
+      "keepsSuffix": " · 可保存 {{days}} 天",
+      "alsoKnownAs": "别名:{{aliases}}",
+      "useSuggestion": "采用建议",
+      "stickWith": "保留「{{name}}」"
+    },
+    "alerts": {
+      "dupeTitle": "你是不是想找「{{name}}」?",
+      "dupeBody": "使用已有条目能让食谱和食材库保持关联。",
+      "useExisting": "使用「{{name}}」",
+      "createAnyway": "创建「{{name}}」",
+      "addFailedTitle": "无法添加食材",
+      "refineFailedTitle": "无法优化",
+      "unknownError": "未知错误"
+    }
+  },
+  "reportSheet": {
+    "headerRecipe": "举报这份食谱",
+    "headerUser": "举报这位用户",
+    "unnamedUser": "未命名用户",
+    "reasonEyebrow": "原因",
+    "reasons": {
+      "inappropriate": "不适宜",
+      "spam": "垃圾内容",
+      "incorrect": "错误或误导",
+      "other": "其他"
+    },
+    "notesEyebrow": {
+      "other": "告诉我们发生了什么",
+      "optional": "还有补充吗?(可选)"
+    },
+    "notesPlaceholder": {
+      "other": "简短描述有助于审核人员处理",
+      "optional": "有什么需要我们知道的?"
+    },
+    "notesCounter": "{{length}}/{{max}}",
+    "successFlash": "✓ 已发送 — 感谢",
+    "submit": "发送举报",
+    "slaHint": "我们会在 24 小时内审核举报,并对违反社区准则的内容采取行动。",
+    "alerts": {
+      "rateLimitTitle": "放慢一点",
+      "rateLimitBody": "今天发送的举报已经够多了。明天再试。",
+      "dupeTitle": "已经举报过",
+      "dupeBody": "审核人员正在处理你之前提交的举报 — 不需要再发一次。",
+      "sendFailedTitle": "无法发送举报",
+      "unknownError": "未知错误"
+    }
+  }
+}

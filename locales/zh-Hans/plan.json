@@ -1,0 +1,97 @@
+{
+  "eyebrow": "本周计划",
+  "header": {
+    "copyLastWeek": "复制上周 ↺",
+    "copying": "复制中…",
+    "today": "回到今天 →",
+    "todayBadge": "今天"
+  },
+  "mealTypes": {
+    "breakfast": "早餐",
+    "lunch": "午餐",
+    "dinner": "晚餐",
+    "snack": "加餐"
+  },
+  "snackReveal": "+ 加餐",
+  "emptyCellPrefix": "+ {{label}}",
+  "cookCell": {
+    "deletedTitle": "(已删除)",
+    "servings_other": "{{count}} 人份",
+    "cooksSingleMeal": "做 1 顿 · ›",
+    "cooksMultiMeal": "做 {{count}} 顿 · ›",
+    "cookedSingleMeal": "✓ 已下厨",
+    "cookedMultiMeal": "✓ 已下厨 · {{count}} 顿"
+  },
+  "leftover": {
+    "from": "← 来自{{day}}",
+    "deletedTitle": "(已删除)"
+  },
+  "noCook": "外食 / 跳过",
+  "deletedRecipe": "(已删除的食谱)",
+  "empty": {
+    "headline": "一周空白。",
+    "body": "点击某天就能安排第一餐 — 或者复制上周做起点。",
+    "ctaIdle": "复制上周 →",
+    "ctaPending": "复制中…"
+  },
+  "batchSheet": {
+    "eyebrow": "本次下厨",
+    "servingsEyebrow": "每餐人份",
+    "servingsHint": "这道菜一顿能让几个人吃饱。",
+    "mealsEyebrow": "这次下厨覆盖几顿",
+    "leftoversLine_other": "下厨当天 + {{count}} 天剩菜",
+    "singleMealCook": "单顿下厨",
+    "mealsHint": "1 表示一次性吃完;2-7 表示批量做一些剩菜分顿吃。",
+    "totalEyebrow": "你将要做",
+    "totalServings": "总共 {{count}} 人份",
+    "totalSubline": "购物清单会按这个总量计算。",
+    "save": "保存",
+    "noChanges": "无更改"
+  },
+  "picker": {
+    "titleEmpty": "添加一餐",
+    "titleChange": "更换这一餐",
+    "titleLeftover": "替换这份剩菜",
+    "leftoverFromPrefix": "来自 ",
+    "mealTypeEyebrow": "餐次",
+    "servingsEyebrow": "人份",
+    "searchPlaceholder": "搜索你的食谱...",
+    "createNew": "+ 创建新食谱",
+    "recentEyebrow": "最近的食谱",
+    "resultsEyebrow": "结果({{count}})",
+    "pinned": {
+      "noCookLabel": "外食 / 跳过",
+      "noCookSubtitle": "购物清单不会把这一餐算进去。",
+      "removeLabel": "从计划移除",
+      "removeSubtitle": "清空这个餐位。"
+    },
+    "currentPick": "当前选择",
+    "emptySearch": {
+      "headline": "没有匹配的结果。",
+      "body": "换个关键词 — 或者点击上方的「+ 创建新食谱」。"
+    },
+    "emptyLibrary": {
+      "headline": "空空的食谱架。",
+      "body": "还没有食谱。点击上方的「+ 创建新食谱」开始你的食谱库。"
+    },
+    "commit": {
+      "pickSomething": "选一个",
+      "removeFromPlan": "从计划移除",
+      "markNoCook": "标记为外食 / 跳过",
+      "replaceWith": "替换为「{{title}}」",
+      "replaceGeneric": "替换",
+      "addNamed": "添加「{{title}}」",
+      "addGeneric": "添加到计划"
+    }
+  },
+  "alerts": {
+    "nothingToCopyTitle": "没有可复制的内容",
+    "nothingToCopyBody": "上周是空的 — 没有可以带过来的内容。",
+    "copiedTitle_other": "已从上周复制 {{count}} 顿",
+    "copiedBody": "已经安排过的餐位不会被覆盖。",
+    "copyFailedTitle": "无法复制上周",
+    "unknownError": "未知错误",
+    "updateFailedTitle": "无法更新计划",
+    "batchSaveFailedTitle": "无法保存批次"
+  }
+}

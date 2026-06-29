@@ -1,0 +1,21 @@
+{
+  "aiCap": {
+    "alertTitle": "{{cap}} of {{cap}} free AI ops used",
+    "alertBody": "Upgrade to Pantry Pro for unlimited AI, or buy 10 ops for $1.99 — they don't expire.",
+    "alertCancel": "Cancel",
+    "alertSeeOptions": "See options",
+    "blockEyebrow": "AI cap reached",
+    "genericHeadline": "You've reached this month's AI cap.",
+    "snapHeadline": "Snap is an AI feature — you've reached this month's cap.",
+    "importHeadline": "URL import and Generate are AI features — you've reached this month's cap.",
+    "blockBody": "The {{cap}} free ops reset on the 1st of next month. Pantry Pro lifts the cap and adds unlimited AI.",
+    "seeOptions": "See your options →",
+    "quotaHintLeft": "{{count}} left this month"
+  },
+  "recipeCap": {
+    "alertTitle": "Your shelf is full",
+    "alertBody": "Free accounts hold up to {{cap}} recipes you've created. Recipes saved from Discover don't count. Pantry Pro lifts the cap and removes every other limit.",
+    "alertCancel": "Cancel",
+    "alertSeePro": "See Pro"
+  }
+}

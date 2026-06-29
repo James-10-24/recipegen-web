@@ -1,0 +1,18 @@
+{
+  "brandTag": "RecipeGen",
+  "skip": "Skip",
+  "continue": "Continue",
+  "getStarted": "Get started",
+  "signInLink": "Already have an account? Sign in →",
+  "guestErrorTitle": "Could not start guest session",
+  "guestErrorBody": "Try again, or sign in with email — we'll bring you back to this screen.",
+  "framing": {
+    "eyebrow": "From IdeaGen",
+    "tagline": "Plan meals, manage your pantry, never overbuy."
+  },
+  "activation": {
+    "eyebrow": "Quick set-up",
+    "headline": "How many are you cooking for?",
+    "hint": "Adults and kids both count. You can change this any time in Settings."
+  }
+}

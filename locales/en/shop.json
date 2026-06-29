@@ -1,0 +1,99 @@
+{
+  "history": {
+    "stackTitle": "Past lists",
+    "emptyHeadline": "No past lists yet.",
+    "emptyBody": "Once you mark a list complete, it shows up here.",
+    "rangeLine": "{{start}} — {{end}}",
+    "summary_one": "{{count}} item · Completed {{when}}",
+    "summary_other": "{{count}} items · Completed {{when}}"
+  },
+  "title": "Shop",
+  "pastListsLink": "Past lists →",
+  "subtitle": {
+    "noList": "Smart grocery list",
+    "pastRange": "Last list covered last week",
+    "rangeAndProgress": "{{range}} · {{checked}}/{{total}} bought"
+  },
+  "presets": {
+    "thisWeek": "This week",
+    "nextWeek": "Next week",
+    "forEyebrow": "For"
+  },
+  "categoryLabels": {
+    "produce": "Produce",
+    "dairy": "Dairy",
+    "meat": "Meat",
+    "seafood": "Seafood",
+    "grain": "Grain",
+    "pantry": "Pantry",
+    "other": "Other"
+  },
+  "waste": {
+    "highLabel": "Likely waste",
+    "mediumLabel": "Might waste",
+    "reasonShelfBulk": "bulk pack on a {{days}}-day shelf",
+    "reasonBulkNoShelf": "bulk pack · {{ratio}} more than needed",
+    "reasonShelfRatio": "{{ratio}} more than you'll use",
+    "reasonNoShelfGenerous": "pack size is generous"
+  },
+  "row": {
+    "removeSwipe": "Remove",
+    "inPantry": "✓ In pantry",
+    "needPlain": "Need {{qty}} {{unit}}",
+    "needWithPantry": "Need {{qty}} {{unit}} · {{pantry}} from pantry",
+    "extraUnclear": "+ Extra for unclear amounts",
+    "editedBadge": "Edited"
+  },
+  "noList": {
+    "headline": "No list yet.",
+    "body": "Generate one from your planned meals. We'll aggregate ingredients, subtract what's in your pantry, and round to package sizes.",
+    "generate": "Generate list",
+    "generating": "Generating…",
+    "nothingPlanned": "Nothing planned yet? → Plan",
+    "rangeFooter": "{{start}} — {{end}}"
+  },
+  "pastRange": {
+    "headline": "A new week.",
+    "body": "Last week's shop is in the past — generate a fresh list for the days ahead.",
+    "ctaIdle": "Generate for this week →",
+    "ctaPending": "Generating…",
+    "viewArchived": "View last week's list ›",
+    "newRange": "New range: {{start}} — {{end}}"
+  },
+  "active": {
+    "regenerate": "Regenerate",
+    "regeneratePending": "Regenerating…",
+    "staleHeadline": "List may be out of date",
+    "staleBody": "Your plan or pantry changed since this list was generated.",
+    "staleRegen": "Regenerate ›",
+    "emptyHeadline": "Nothing to buy.",
+    "emptyBody": "Either nothing planned for this range, or your pantry already covers it.",
+    "checkPlan": "Check the Plan →",
+    "discardList": "Discard list",
+    "markComplete": "Mark list complete"
+  },
+  "editModal": {
+    "eyebrow": "Edit qty",
+    "suggested": "Suggested: {{qty}} {{unit}}",
+    "overrideNote": "This item has been edited. Your value will be preserved through regenerate.",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving…"
+  },
+  "alerts": {
+    "setToRemoveTitle": "Set to remove?",
+    "setToRemoveBody": "Setting qty to 0 is the same as removing the item — swipe the row left to remove instead.",
+    "saveFailedTitle": "Could not save",
+    "generateFailedTitle": "Could not generate",
+    "unknownError": "Unknown error",
+    "regenTitle": "Regenerate list?",
+    "regenBody": "Keeps items you already bought. Replaces everything else.",
+    "regenConfirm": "Regenerate",
+    "discardTitle": "Discard this list?",
+    "discardConfirm": "Discard"
+  },
+  "toast": {
+    "removed": "Removed {{name}}",
+    "undo": "Undo"
+  }
+}

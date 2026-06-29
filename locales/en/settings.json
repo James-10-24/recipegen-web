@@ -1,0 +1,166 @@
+{
+  "title": "Settings",
+  "guest": {
+    "eyebrow": "Guest mode",
+    "headline": "Keep your recipes.",
+    "body": "You're using RecipeGen without an account. Add an email + password and everything you've created stays attached. Guests are also limited to 10 recipes and can't browse or publish to the community library.",
+    "saveAccountLink": "Save my account →"
+  },
+  "subscription": {
+    "section": "Subscription",
+    "brand": "Pantry Pro",
+    "planAnnual": "Annual plan",
+    "planMonthly": "Monthly plan",
+    "planCancelled": "Cancelled — access until expiry",
+    "renews": "Renews {{date}}",
+    "expires": "Expires {{date}}",
+    "bonusCredits": "{{count}} bonus credits available",
+    "manageLink": "Manage subscription →",
+    "freeLabel": "Free",
+    "freeHeadline": "Cook more, waste less.",
+    "freeBody": "Upgrade to Pantry Pro for unlimited recipes, unlimited AI, and waste-risk warnings on shopping lists.",
+    "seePro": "See Pro →",
+    "freeUsage": "{{used}} / {{cap}} AI ops this month",
+    "freeUsageCredits": " · {{count}} credits",
+    "restoring": "Restoring…",
+    "restoreLink": "Restore purchases",
+    "alerts": {
+      "restoredTitle": "Pantry Pro restored",
+      "restoredBody": "Your subscription is active again. The rest of the app may take a few seconds to refresh.",
+      "nothingTitle": "Nothing to restore",
+      "nothingBody": "No past purchase was found on this Apple ID. If you bought RecipeGen on a different Apple ID, switch to it in iPhone Settings → Apple ID and try again.",
+      "inactiveTitle": "Subscription not active",
+      "inactiveBody": "We found a past purchase but it isn't currently active. If your subscription is on a different RecipeGen account, sign out and sign in to that account, then try Restore again.",
+      "restoreFailedTitle": "Restore failed",
+      "restoreFailedFallback": "Try again later.",
+      "manageUnavailableTitle": "Subscription management unavailable",
+      "manageUnavailableBody": "Try again in a moment, or relaunch the app.",
+      "manageFailedTitle": "Could not open subscription management",
+      "manageFailedFallback": "Try again later."
+    }
+  },
+  "profile": {
+    "section": "Profile",
+    "displayNameLabel": "Display name",
+    "displayNamePlaceholder": "What should we call you?",
+    "counter": "{{count}}/{{max}}",
+    "saveName": "Save name",
+    "savedFlash": "✓ Saved",
+    "hint": "Shown next to public recipes you publish.",
+    "alerts": {
+      "saveFailedTitle": "Could not save",
+      "saveFailedFallback": "Unknown error"
+    }
+  },
+  "household": {
+    "section": "Household",
+    "label": "How many you're cooking for",
+    "save": "Save",
+    "savedFlash": "✓ Saved",
+    "hint": "Used to scale recipes and shopping lists. Adults + kids both count."
+  },
+  "language": {
+    "section": "Language",
+    "label": "App language",
+    "hint": "Recipes you create or save keep their original language. Changes the chrome only."
+  },
+  "account": {
+    "section": "Account",
+    "terms": "Terms of use",
+    "privacy": "Privacy policy",
+    "changePassword": "Change password",
+    "passwordFlash": "✓ Updated",
+    "showIntro": "Show intro again",
+    "signOut": "Sign out",
+    "endGuestSession": "End guest session",
+    "alerts": {
+      "signOutTitle": "Sign out?",
+      "signOutConfirm": "Sign out",
+      "endGuestTitle": "End guest session?",
+      "endGuestBody": "Your guest data stays on the server but you won't be able to reach it from this device. To keep it, save your account first.",
+      "endGuestConfirm": "End session"
+    }
+  },
+  "blocked": {
+    "section": "Blocked users",
+    "emptyHeadline": "Nobody on the list.",
+    "emptyHint": "Block authors from any public recipe's \"⋯\" menu.",
+    "unnamedUser": "Unnamed user",
+    "blockedAt": "Blocked {{time}}",
+    "unblockButton": "Unblock",
+    "alerts": {
+      "confirmTitle": "Unblock {{name}}?",
+      "confirmTitleFallback": "Unblock this user?",
+      "confirmBody": "Their public recipes will appear in Discover again.",
+      "confirmAction": "Unblock",
+      "failedTitle": "Could not unblock",
+      "failedFallback": "Unknown error"
+    }
+  },
+  "reports": {
+    "section": "Your reports",
+    "emptyHeadline": "Nothing flagged.",
+    "emptyHint": "Reports show up here once you file one from any public recipe's \"⋯\" menu.",
+    "deletedRecipe": "(deleted recipe)",
+    "userSubject": "A user",
+    "withdrawButton": "Withdraw",
+    "slaHint": "We review reports within 24 hours.",
+    "reasons": {
+      "inappropriate": "Inappropriate",
+      "spam": "Spam",
+      "incorrect": "Incorrect",
+      "other": "Other"
+    },
+    "statuses": {
+      "pending": "Under review",
+      "reviewed": "Reviewed",
+      "dismissed": "Dismissed",
+      "actioned": "Actioned"
+    },
+    "alerts": {
+      "withdrawTitle": "Withdraw report?",
+      "withdrawBody": "We'll remove this report from review. You can re-submit later if needed.",
+      "withdrawConfirm": "Withdraw",
+      "withdrawFailedTitle": "Could not withdraw",
+      "withdrawFailedFallback": "Unknown error"
+    }
+  },
+  "dangerZone": {
+    "section": "Danger zone",
+    "guestBody": "Permanently delete this guest session and every recipe, plan, and pantry item under it. This can't be undone.",
+    "userBody": "Permanently delete your account and everything stored under it. This can't be undone.",
+    "deleteGuestData": "Delete guest data",
+    "deleteAccount": "Delete account",
+    "alerts": {
+      "deleteStartTitle": "Delete your account?",
+      "deleteStartBody": "This permanently removes your account, recipes, plans, pantry, grocery lists, and cook history. This cannot be undone.",
+      "deleteStartConfirm": "Continue",
+      "deleteFailedTitle": "Could not delete account",
+      "deleteFailedFallback": "Unknown error"
+    }
+  },
+  "deleteModal": {
+    "eyebrow": "Final confirmation",
+    "headlineGuest": "Type DELETE to confirm",
+    "headlineUser": "Type DELETE + your password",
+    "body": "Once you tap Delete below, your account and everything stored under it is gone for good.",
+    "typeDeleteLabel": "Type DELETE",
+    "typeDeletePlaceholder": "DELETE",
+    "passwordLabel": "Your password",
+    "passwordPlaceholder": "••••••••",
+    "cancel": "Cancel",
+    "deleteButton": "Delete",
+    "mismatchTitle": "Confirmation did not match",
+    "mismatchBody": "Account NOT deleted. Type DELETE in all caps to confirm.",
+    "noEmailError": "Could not verify your account — sign out and back in, then try again.",
+    "noPasswordError": "Enter your password to confirm.",
+    "wrongPasswordError": "Incorrect password — try again."
+  },
+  "relTime": {
+    "today": "today",
+    "yesterday": "yesterday",
+    "daysAgo": "{{count}}d ago",
+    "monthsAgo": "{{count}}mo ago",
+    "yearsAgo": "{{count}}y ago"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "unavailableTitle": "Subscriptions unavailable",
+  "unavailableBody": "Try again in a moment, or relaunch the app.",
+  "purchaseFailedTitle": "Purchase failed",
+  "purchaseFailedFallback": "Try again or restore purchases.",
+  "restore": {
+    "nothingTitle": "Nothing to restore",
+    "nothingBody": "No past purchase was found on this Apple ID. If you bought RecipeGen on a different Apple ID, switch to it in iPhone Settings → Apple ID and try again.",
+    "inactiveTitle": "Subscription not active",
+    "inactiveBody": "We found a past purchase but it isn't currently active. Sign in to the RecipeGen account that owns the subscription, then try Restore again.",
+    "errorTitle": "Restore failed",
+    "errorFallback": "Try again later."
+  }
+}

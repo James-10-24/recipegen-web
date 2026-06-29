@@ -1,0 +1,100 @@
+{
+  "eyebrow": "The Plan",
+  "header": {
+    "copyLastWeek": "Copy last week ↺",
+    "copying": "Copying…",
+    "today": "Today →",
+    "todayBadge": "Today"
+  },
+  "mealTypes": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "snack": "Snack"
+  },
+  "snackReveal": "+ Snack",
+  "emptyCellPrefix": "+ {{label}}",
+  "cookCell": {
+    "deletedTitle": "(deleted)",
+    "servings_one": "{{count}} serving",
+    "servings_other": "{{count}} servings",
+    "cooksSingleMeal": "Cooks 1 meal · ›",
+    "cooksMultiMeal": "Cooks {{count}} meals · ›",
+    "cookedSingleMeal": "✓ Cooked",
+    "cookedMultiMeal": "✓ Cooked · {{count}} meals"
+  },
+  "leftover": {
+    "from": "← From {{day}}",
+    "deletedTitle": "(deleted)"
+  },
+  "noCook": "Eating out / skip",
+  "deletedRecipe": "(deleted recipe)",
+  "empty": {
+    "headline": "A blank week.",
+    "body": "Tap a day to plan your first meal — or copy last week as a starting point.",
+    "ctaIdle": "Copy from last week →",
+    "ctaPending": "Copying…"
+  },
+  "batchSheet": {
+    "eyebrow": "This cook",
+    "servingsEyebrow": "Servings per meal",
+    "servingsHint": "How many people one meal of this recipe feeds.",
+    "mealsEyebrow": "Meals this cook covers",
+    "leftoversLine_one": "Cook day + 1 day of leftovers",
+    "leftoversLine_other": "Cook day + {{count}} days of leftovers",
+    "singleMealCook": "Single-meal cook",
+    "mealsHint": "Set to 1 for a one-off; 2-7 for a batch that feeds leftovers.",
+    "totalEyebrow": "You're cooking",
+    "totalServings": "{{count}} servings total",
+    "totalSubline": "Shopping list will size for this batch.",
+    "save": "Save",
+    "noChanges": "No changes"
+  },
+  "picker": {
+    "titleEmpty": "Add a meal",
+    "titleChange": "Change this meal",
+    "titleLeftover": "Replace this leftover",
+    "leftoverFromPrefix": "From ",
+    "mealTypeEyebrow": "Meal type",
+    "servingsEyebrow": "Servings",
+    "searchPlaceholder": "Search your recipes...",
+    "createNew": "+ Create a new recipe",
+    "recentEyebrow": "Recent recipes",
+    "resultsEyebrow": "Results ({{count}})",
+    "pinned": {
+      "noCookLabel": "Eating out / skip",
+      "noCookSubtitle": "We won't include this meal in the shopping list.",
+      "removeLabel": "Remove from plan",
+      "removeSubtitle": "Clear this slot."
+    },
+    "currentPick": "Current pick",
+    "emptySearch": {
+      "headline": "No matches.",
+      "body": "Try a different search — or tap + Create a new recipe above."
+    },
+    "emptyLibrary": {
+      "headline": "An empty shelf.",
+      "body": "No recipes yet. Tap + Create a new recipe above to start your library."
+    },
+    "commit": {
+      "pickSomething": "Pick something",
+      "removeFromPlan": "Remove from plan",
+      "markNoCook": "Mark as eating out / skip",
+      "replaceWith": "Replace with {{title}}",
+      "replaceGeneric": "Replace",
+      "addNamed": "Add {{title}}",
+      "addGeneric": "Add to plan"
+    }
+  },
+  "alerts": {
+    "nothingToCopyTitle": "Nothing to copy",
+    "nothingToCopyBody": "Last week was empty — there's nothing to bring forward.",
+    "copiedTitle_one": "Copied 1 meal from last week",
+    "copiedTitle_other": "Copied {{count}} meals from last week",
+    "copiedBody": "Already-planned slots were left alone.",
+    "copyFailedTitle": "Couldn't copy last week",
+    "unknownError": "Unknown error",
+    "updateFailedTitle": "Couldn't update the plan",
+    "batchSaveFailedTitle": "Couldn't save the batch"
+  }
+}

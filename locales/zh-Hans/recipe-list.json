@@ -1,0 +1,41 @@
+{
+  "title": "食谱",
+  "settingsLink": "设置",
+  "newButton": "+ 新建",
+  "guestCounter": "游客 · {{count}} / {{cap}} 份食谱 · ",
+  "freeCounter": "免费版 · 已创建 {{count}} / {{cap}} · ",
+  "saveAccountLink": "保存我的账户",
+  "liftCapLink": "解锁不限量",
+  "loadError": "无法加载食谱:{{message}}",
+  "categoryAll": "全部",
+  "categoryLabels": {
+    "Breakfast": "早餐",
+    "Lunch": "午餐",
+    "Dinner": "晚餐",
+    "Snack": "零食",
+    "Dessert": "甜点",
+    "Drink": "饮品"
+  },
+  "row": {
+    "pantryCoverage": "食材库已有 {{covered}}/{{total}}",
+    "servings_other": "{{count}} 人份",
+    "prepMin": "准备 {{min}} 分钟",
+    "cookMin": "烹饪 {{min}} 分钟"
+  },
+  "guestCapAlert": {
+    "title": "游客上限已到",
+    "body": "游客最多可以保存 {{cap}} 份食谱。保存账户后即可继续添加。",
+    "saveAccount": "保存我的账户"
+  },
+  "emptyFiltered": {
+    "headline": "这里空着。",
+    "body": "还没有「{{category}}」类的食谱。",
+    "showAll": "显示全部食谱 →"
+  },
+  "emptyAll": {
+    "headline": "空空的食谱架。",
+    "body": "手动添加第一份食谱、粘贴链接导入,或者把馋的东西交给 AI 生成。",
+    "newRecipe": "+ 新建食谱",
+    "browseDiscover": "或者去 Discover 逛逛 →"
+  }
+}

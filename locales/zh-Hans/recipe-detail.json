@@ -1,0 +1,115 @@
+{
+  "header": {
+    "share": "分享",
+    "shareA11y": "分享食谱",
+    "edit": "编辑",
+    "moreActionsA11y": "更多操作"
+  },
+  "error": {
+    "notFound": "找不到这份食谱。"
+  },
+  "categoryLabels": {
+    "Breakfast": "早餐",
+    "Lunch": "午餐",
+    "Dinner": "晚餐",
+    "Snack": "零食",
+    "Dessert": "甜点",
+    "Drink": "饮品"
+  },
+  "meta": {
+    "servings_other": "{{count}} 人份",
+    "prepMin": "准备 {{min}} 分钟",
+    "cookMin": "烹饪 {{min}} 分钟"
+  },
+  "cookStats": {
+    "cookedOnce": "已下厨 1 次",
+    "cookedTimes": "已下厨 {{count}} 次",
+    "lastSuffix": " · 最近一次{{when}}"
+  },
+  "relTime": {
+    "today": "今天",
+    "yesterday": "昨天",
+    "daysAgo": "{{count}} 天前",
+    "weeksAgo_other": "{{count}} 周前",
+    "monthsAgo_other": "{{count}} 个月前",
+    "yearsAgo_other": "{{count}} 年前"
+  },
+  "byline": {
+    "by": "作者",
+    "savedFrom": "保存自",
+    "privateRecipeFallback": "一份私人食谱",
+    "byAuthor": "作者",
+    "sourceLink": "来源:{{host}} →"
+  },
+  "owner": {
+    "publicVisible": "公开 · 在 Discover 可见",
+    "publishRefused": "发布被拒 · 修改后再试一次"
+  },
+  "cta": {
+    "iCookedThis": "我做了这道",
+    "openSavedCopy": "✓ 打开我保存的副本",
+    "saveToMine": "保存到我的食谱",
+    "deleteRecipe": "删除食谱"
+  },
+  "sections": {
+    "ingredients": "食材",
+    "instructions": "做法",
+    "emptyIngredients": "暂无食材。"
+  },
+  "coverage": {
+    "covered": "✓ 食材库:{{qty}} {{unit}}",
+    "short": "还差 {{qty}} {{unit}}",
+    "unitMismatch": "食材库里有(单位不同 — 请手动确认)",
+    "missing": "食材库未储备"
+  },
+  "toasts": {
+    "saved": "已保存到你的食谱",
+    "savedView": "查看",
+    "cookedTitle": "已完成「{{title}}」",
+    "undo": "撤销",
+    "undoing": "撤销中…"
+  },
+  "alerts": {
+    "undoFailedTitle": "无法撤销",
+    "unknownError": "未知错误",
+    "deleteTitle": "删除食谱?",
+    "deleteBody": "此操作无法撤销。",
+    "deleteConfirm": "删除",
+    "deleteFailedTitle": "删除失败",
+    "saveFailedTitle": "无法保存",
+    "blockTitle": "屏蔽 {{name}}?",
+    "blockBody": "你将不再在 Discover 里看到 TA 的食谱。可以稍后在设置中取消屏蔽。",
+    "blockConfirm": "屏蔽",
+    "blockedTitle": "已屏蔽 {{name}}",
+    "blockedBody": "TA 的食谱已从 Discover 隐藏。可以稍后在设置中取消屏蔽。",
+    "blockFailedTitle": "无法屏蔽",
+    "thisUserFallback": "这位用户",
+    "moreActionsTitle": "操作",
+    "moreReportRecipe": "举报这份食谱",
+    "moreReportAuthor": "举报作者",
+    "moreBlockAuthor": "屏蔽作者"
+  },
+  "cookSheet": {
+    "title": "记录下厨",
+    "subtitle": "{{recipeTitle}} · {{servings}} 人份",
+    "fromPlanMeals_other": "来自你的计划 · {{count}} 顿",
+    "emptyIngredients": "这份食谱没有可扣减的食材。",
+    "needLine": "需要 {{required}} {{unit}} · 食材库 {{pantry}} {{unit}}",
+    "shortSuffix": " · 还差 {{short}} {{unit}}",
+    "unconvertible_other": "{{count}} 项食材库条目单位不同(密度未知)",
+    "useEyebrow": "使用",
+    "confirmCta": "我做完了",
+    "alerts": {
+      "overDrawTitle": "超出食材库",
+      "overDrawBody": "尝试使用 {{used}} {{unit}} 的 {{name}},但只有 {{available}} {{unit}} 可用。",
+      "logFailedTitle": "无法记录下厨"
+    }
+  },
+  "share": {
+    "serves": "{{count}} 人份",
+    "ingredientsHeading": "食材",
+    "instructionsHeading": "做法",
+    "prepMin": "准备 {{min}} 分钟",
+    "cookMin": "烹饪 {{min}} 分钟"
+  }
+}
