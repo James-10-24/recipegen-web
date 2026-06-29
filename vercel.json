@@ -4,30 +4,29 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": null,
+  "redirects": [{ "source": "/", "destination": "/app", "permanent": false }],
   "rewrites": [
     {
-      "source": "/((?!_expo/|assets/|icons/|favicon.ico|manifest.json|sw.js).*)",
-      "destination": "/index.html"
+      "source": "/app/((?!_expo/|assets/|icons/|favicon.ico|manifest.json|sw.js).*)",
+      "destination": "/app/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/sw.js",
+      "source": "/app/sw.js",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Service-Worker-Allowed", "value": "/app/" }
       ]
     },
     {
-      "source": "/manifest.json",
+      "source": "/app/manifest.json",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
-      "source": "/_expo/static/(.*)",
+      "source": "/app/_expo/static/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

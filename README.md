@@ -53,12 +53,17 @@ npx serve dist     # or any static server
 
 ## Deploy (Vercel)
 
-1. Import this repo in Vercel. `vercel.json` already sets the build command (`npm run build:web`), output dir (`dist`), SPA rewrites, and caching headers.
+The PWA is served under the **`/app` base path** (`experiments.baseUrl` in `app.json`) so it can sit behind the existing marketing domain at `yourdomain.com/app`. The build outputs a self-contained `dist/app/`.
+
+**Two-project setup** — the marketing site (the `recipegen` repo's `web/` folder) keeps the custom domain; this project deploys separately and the marketing project proxies `/app/*` to it:
+
+1. Import this repo in Vercel as its own project. `vercel.json` sets the build command (`npm run build:web`), output dir (`dist`), the in-`/app` SPA rewrite, and caching headers. This gives you e.g. `https://recipegen-web.vercel.app/app`.
 2. Add the environment variables in **Project → Settings → Environment Variables**:
    - `EXPO_PUBLIC_SUPABASE_URL`
    - `EXPO_PUBLIC_SUPABASE_ANON_KEY`
-3. Add the deployment origin to **Supabase → Auth → URL Configuration** (Site URL + redirect URLs) so email/OAuth callbacks resolve.
-4. Deploy.
+3. In the **marketing project** (`web/vercel.json`), a rewrite proxies `yourdomain.com/app/*` → this project's deployment, plus a `/app`-scoped CSP that allows Supabase. Confirm the proxy target URL there matches this project's production domain.
+4. Add `https://yourdomain.com` (the marketing origin, not the `*.vercel.app` one) to **Supabase → Auth → URL Configuration** (Site URL + redirect URLs) so email/OAuth callbacks resolve.
+5. Deploy both. Visit `yourdomain.com/app`.
 
 ## Project layout
 

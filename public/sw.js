@@ -9,17 +9,23 @@
  *     Supabase REST/Auth/Storage API and all non-GET requests are NEVER
  *     cached, so auth and writes always hit the network.
  *
+ * The app is served under the /app base path (see experiments.baseUrl), so
+ * the SW scope and all cached paths are /app-prefixed.
+ *
  * The cache name is versioned; bump CACHE_VERSION to force old caches out.
  */
 
 const CACHE_VERSION = 'v1';
 const CACHE = `recipegen-${CACHE_VERSION}`;
+const BASE = '/app/';
 
 self.addEventListener('install', (event) => {
   // Activate this SW as soon as it finishes installing.
   self.skipWaiting();
   event.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(['/', '/manifest.json'])),
+    caches
+      .open(CACHE)
+      .then((cache) => cache.addAll([BASE, `${BASE}manifest.json`])),
   );
 });
 
@@ -44,18 +50,19 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // App navigations: network-first so a fresh deploy lands immediately,
-  // with the cached shell as an offline fallback.
-  if (request.mode === 'navigate') {
+  // Only handle navigations within the app's /app scope.
+  if (request.mode === 'navigate' && url.pathname.startsWith(BASE)) {
+    // App navigations: network-first so a fresh deploy lands immediately,
+    // with the cached shell as an offline fallback.
     event.respondWith(
       (async () => {
         try {
           const fresh = await fetch(request);
           const cache = await caches.open(CACHE);
-          cache.put('/', fresh.clone());
+          cache.put(BASE, fresh.clone());
           return fresh;
         } catch {
-          const cached = await caches.match('/');
+          const cached = await caches.match(BASE);
           return cached ?? Response.error();
         }
       })(),

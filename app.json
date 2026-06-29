@@ -60,6 +60,7 @@
       "expo-localization"
     ],
     "experiments": {
+      "baseUrl": "/app",
       "typedRoutes": true,
       "reactCompiler": true
     }
