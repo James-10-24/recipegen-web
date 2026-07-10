@@ -5,11 +5,9 @@ import { ActivityIndicator, View } from 'react-native';
 import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
 import { useAuth } from '@/lib/auth-context';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
   const { session, loading, onboardingSeen } = useAuth();
 
   // Wait for both auth state AND the AsyncStorage onboarding flag to load.
@@ -28,7 +26,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors.light.tint,
         headerShown: false,
         tabBarButton: HapticTab,
       }}>

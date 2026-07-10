@@ -67,6 +67,10 @@ const headTags = `
     ${MARKER}
     <link rel="manifest" href="/app/manifest.json" />
     <meta name="theme-color" content="#a4501f" />
+    <!-- App is light-only; force light UA rendering of form controls so
+         inputs don't get a dark background (black-on-black text) on a
+         dark-mode OS. -->
+    <meta name="color-scheme" content="light" />
     <meta name="description" content="Plan meals, get a smart grocery list that subtracts your pantry, and stop overbuying." />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />

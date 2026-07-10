@@ -5,14 +5,13 @@ import {
   Fraunces_700Bold_Italic,
   useFonts,
 } from '@expo-google-fonts/fraunces';
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 import '@/global.css';
-import { useColorScheme } from '@/hooks/use-color-scheme';
 import { AuthProvider } from '@/lib/auth-context';
 // Side-effect import: bootstraps i18next at app boot so the first
 // render of any screen using useTranslation already has resources.
@@ -27,7 +26,6 @@ export const unstable_settings = {
 const queryClient = new QueryClient();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
   const [fontsLoaded] = useFonts({
     Fraunces_400Regular,
     Fraunces_500Medium,
@@ -43,7 +41,10 @@ export default function RootLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        {/* App is light-only by design (no dark: styles anywhere); pin the
+            light theme so OS dark mode can't invert backgrounds and hide the
+            (black) text. */}
+        <ThemeProvider value={DefaultTheme}>
           <Stack screenOptions={{ headerBackTitle: 'Back' }}>
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="sign-in" options={{ headerShown: false }} />
@@ -64,7 +65,7 @@ export default function RootLayout() {
             <Stack.Screen name="eula" options={{ title: 'Terms of use' }} />
             <Stack.Screen name="privacy" options={{ title: 'Privacy' }} />
           </Stack>
-          <StatusBar style="auto" />
+          <StatusBar style="dark" />
         </ThemeProvider>
       </AuthProvider>
     </QueryClientProvider>
