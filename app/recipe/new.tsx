@@ -1,6 +1,6 @@
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { useState } from 'react';
-import { Alert, Pressable, Text, View } from 'react-native';
+import { useCallback, useState } from 'react';
+import { Alert, Platform, Pressable, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { ImportedSourceChip } from '@/components/imported-source-chip';
@@ -46,6 +46,12 @@ export default function NewRecipeScreen() {
   // Remounting the form with a new key forces it to pick up `initial` again.
   const [formKey, setFormKey] = useState(0);
   const [formDirty, setFormDirty] = useState(false);
+  // Stable identity: RecipeForm's dirty-tracking effect lists onUserEdit as
+  // a dependency, so an inline arrow (new every render) would make a mere
+  // parent re-render (e.g. the profile query resolving) fire it and flip
+  // formDirty spuriously — which then triggers the replace-confirm on every
+  // generate. useCallback keeps it stable so only real field edits mark dirty.
+  const handleUserEdit = useCallback(() => setFormDirty(true), []);
 
   const applyImport = (res: ImportResult) => {
     const ingredients: RecipeFormInitial['ingredients'] = [];
@@ -108,8 +114,18 @@ export default function NewRecipeScreen() {
     setFormKey((k) => k + 1);
   };
 
-  const confirmReplace = (): Promise<boolean> =>
-    new Promise((resolve) => {
+  const confirmReplace = (): Promise<boolean> => {
+    // Alert.alert with buttons is a no-op on react-native-web — its
+    // Promise would never resolve and the import/generate spinner would
+    // hang forever. Use the browser's native confirm on web.
+    if (Platform.OS === 'web') {
+      const ok =
+        typeof window !== 'undefined'
+          ? window.confirm(`${t('replaceImport.title')}\n\n${t('replaceImport.body')}`)
+          : true;
+      return Promise.resolve(ok);
+    }
+    return new Promise((resolve) => {
       Alert.alert(
         t('replaceImport.title'),
         t('replaceImport.body'),
@@ -123,6 +139,7 @@ export default function NewRecipeScreen() {
         ],
       );
     });
+  };
 
   const handleImported = async (res: ImportResult): Promise<boolean> => {
     if (formDirty) {
@@ -200,7 +217,7 @@ export default function NewRecipeScreen() {
         }
         submitting={create.isPending}
         submitLabel={t('screens.submitNew')}
-        onUserEdit={() => setFormDirty(true)}
+        onUserEdit={handleUserEdit}
         onSubmit={async (input) => {
           try {
             const id = await create.mutateAsync({
@@ -221,10 +238,15 @@ export default function NewRecipeScreen() {
               router.replace(`/recipe/${id}` as any);
             }
           } catch (e: any) {
-            Alert.alert(
-              t('screens.createFailedTitle'),
-              e.message ?? t('screens.unknownError'),
-            );
+            const msg = e.message ?? t('screens.unknownError');
+            if (Platform.OS === 'web') {
+              // Alert.alert is a no-op on web — surface via the browser.
+              if (typeof window !== 'undefined') {
+                window.alert(`${t('screens.createFailedTitle')}\n\n${msg}`);
+              }
+            } else {
+              Alert.alert(t('screens.createFailedTitle'), msg);
+            }
           }
         }}
       />
