@@ -181,7 +181,13 @@ export default function RecipesScreen() {
             <ScrollView
               horizontal
               showsHorizontalScrollIndicator={false}
-              contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 8, gap: 8 }}
+              style={{ flexGrow: 0 }}
+              contentContainerStyle={{
+                alignItems: 'center',
+                paddingHorizontal: 16,
+                paddingBottom: 8,
+                gap: 8,
+              }}
             >
               {(['All', ...RECIPE_CATEGORIES.filter((c) => usedCategories.has(c))] as const).map(
                 (c) => {

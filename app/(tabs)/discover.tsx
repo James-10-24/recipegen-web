@@ -199,7 +199,13 @@ export default function DiscoverScreen() {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ paddingHorizontal: 24, paddingBottom: 8, gap: 8 }}
+        style={{ flexGrow: 0 }}
+        contentContainerStyle={{
+          alignItems: 'center',
+          paddingHorizontal: 24,
+          paddingBottom: 8,
+          gap: 8,
+        }}
       >
         {(['All', ...RECIPE_LANGUAGES] as const).map((lang) => {
           const value = lang === 'All' ? null : lang;
@@ -231,7 +237,13 @@ export default function DiscoverScreen() {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ paddingHorizontal: 24, paddingBottom: 12, gap: 8 }}
+        style={{ flexGrow: 0 }}
+        contentContainerStyle={{
+          alignItems: 'center',
+          paddingHorizontal: 24,
+          paddingBottom: 12,
+          gap: 8,
+        }}
       >
         {(['All', ...RECIPE_CATEGORIES] as const).map((c) => {
           const value = c === 'All' ? null : (c as RecipeCategory);
