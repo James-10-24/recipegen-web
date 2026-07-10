@@ -1,6 +1,6 @@
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useCallback, useState } from 'react';
-import { Alert, Platform, Pressable, Text, View } from 'react-native';
+import { Alert, Pressable, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { ImportedSourceChip } from '@/components/imported-source-chip';
@@ -114,18 +114,8 @@ export default function NewRecipeScreen() {
     setFormKey((k) => k + 1);
   };
 
-  const confirmReplace = (): Promise<boolean> => {
-    // Alert.alert with buttons is a no-op on react-native-web — its
-    // Promise would never resolve and the import/generate spinner would
-    // hang forever. Use the browser's native confirm on web.
-    if (Platform.OS === 'web') {
-      const ok =
-        typeof window !== 'undefined'
-          ? window.confirm(`${t('replaceImport.title')}\n\n${t('replaceImport.body')}`)
-          : true;
-      return Promise.resolve(ok);
-    }
-    return new Promise((resolve) => {
+  const confirmReplace = (): Promise<boolean> =>
+    new Promise((resolve) => {
       Alert.alert(
         t('replaceImport.title'),
         t('replaceImport.body'),
@@ -139,7 +129,6 @@ export default function NewRecipeScreen() {
         ],
       );
     });
-  };
 
   const handleImported = async (res: ImportResult): Promise<boolean> => {
     if (formDirty) {
@@ -238,15 +227,10 @@ export default function NewRecipeScreen() {
               router.replace(`/recipe/${id}` as any);
             }
           } catch (e: any) {
-            const msg = e.message ?? t('screens.unknownError');
-            if (Platform.OS === 'web') {
-              // Alert.alert is a no-op on web — surface via the browser.
-              if (typeof window !== 'undefined') {
-                window.alert(`${t('screens.createFailedTitle')}\n\n${msg}`);
-              }
-            } else {
-              Alert.alert(t('screens.createFailedTitle'), msg);
-            }
+            Alert.alert(
+              t('screens.createFailedTitle'),
+              e.message ?? t('screens.unknownError'),
+            );
           }
         }}
       />

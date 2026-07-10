@@ -12,6 +12,10 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 import '@/global.css';
+// Side-effect import: on web, patches react-native-web's no-op Alert.alert
+// to use real browser dialogs (native is a no-op). Must run before any
+// screen mounts so every Alert.alert call site works on web. See lib/web-alert.
+import '@/lib/web-alert';
 import { AuthProvider } from '@/lib/auth-context';
 // Side-effect import: bootstraps i18next at app boot so the first
 // render of any screen using useTranslation already has resources.
