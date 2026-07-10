@@ -138,7 +138,7 @@
     "eyebrow": "Start with…",
     "modes": {
       "url": "A URL",
-      "prompt": "A description",
+      "prompt": "A dish name",
       "text": "Pasted text"
     },
     "url": {
@@ -146,8 +146,8 @@
       "placeholder": "https://…"
     },
     "prompt": {
-      "prompt": "Describe what you'd like. We'll write it for you.",
-      "placeholder": "e.g. quick weeknight chicken with garlic and lemon"
+      "prompt": "Name a dish and we'll write the recipe, then fill it into the template below.",
+      "placeholder": "e.g. Mushroom Beef Alfredo Pasta"
     },
     "text": {
       "prompt": "Paste a recipe. We'll sort out the structure.",

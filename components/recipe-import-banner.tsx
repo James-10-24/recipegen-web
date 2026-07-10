@@ -17,11 +17,13 @@ import { subscriptionKeys } from '@/lib/queries/subscription';
 import {
   extractRecipeFromText,
   generateRecipeFromPrompt,
-  importRecipeFromUrl,
   type ImportResult,
 } from '@/lib/recipe-import';
 
-type Mode = 'url' | 'prompt' | 'text';
+// URL import was removed — site scraping was too unreliable. Recipes now
+// start from an AI-generated dish name/craving (the reliable path) or from
+// pasted recipe text.
+type Mode = 'prompt' | 'text';
 
 const MAX_PROMPT_LEN = 600;
 // Server-side cap is 12_000; mirror it client-side so the textarea counter
@@ -70,35 +72,30 @@ export function RecipeImportBanner({ onImported, defaultServings }: Props) {
   // t(`importBanner.modes.${mode}`) would erase autocomplete).
   const modeLabel = (m: Mode): string => {
     switch (m) {
-      case 'url': return t('importBanner.modes.url');
       case 'prompt': return t('importBanner.modes.prompt');
       case 'text': return t('importBanner.modes.text');
     }
   };
   const ctaLabel = (m: Mode): string => {
     switch (m) {
-      case 'url': return t('importBanner.cta.url');
       case 'prompt': return t('importBanner.cta.prompt');
       case 'text': return t('importBanner.cta.text');
     }
   };
   const partialError = (m: Mode): string => {
     switch (m) {
-      case 'url': return t('importBanner.errors.urlPartial');
       case 'prompt': return t('importBanner.errors.promptPartial');
       case 'text': return t('importBanner.errors.textPartial');
     }
   };
   const failedError = (m: Mode): string => {
     switch (m) {
-      case 'url': return t('importBanner.errors.urlFailed');
       case 'prompt': return t('importBanner.errors.promptFailed');
       case 'text': return t('importBanner.errors.textFailed');
     }
   };
 
-  const [mode, setMode] = useState<Mode>('url');
-  const [url, setUrl] = useState('');
+  const [mode, setMode] = useState<Mode>('prompt');
   const [prompt, setPrompt] = useState('');
   const [text, setText] = useState('');
   const [busy, setBusy] = useState(false);
@@ -126,11 +123,9 @@ export function RecipeImportBanner({ onImported, defaultServings }: Props) {
   const canSubmit =
     !busy &&
     status.canRun &&
-    (mode === 'url'
-      ? /^https?:\/\/\S+/i.test(url.trim())
-      : mode === 'prompt'
-        ? prompt.trim().length >= 5
-        : text.trim().length >= MIN_TEXT_LEN);
+    (mode === 'prompt'
+      ? prompt.trim().length >= 5
+      : text.trim().length >= MIN_TEXT_LEN);
 
   const handleSubmit = async () => {
     if (!canSubmit) return;
@@ -138,14 +133,12 @@ export function RecipeImportBanner({ onImported, defaultServings }: Props) {
     setError(null);
     try {
       const res =
-        mode === 'url'
-          ? await importRecipeFromUrl(url.trim())
-          : mode === 'prompt'
-            ? await generateRecipeFromPrompt({
-                description: prompt.trim(),
-                servings: defaultServings,
-              })
-            : await extractRecipeFromText(text.trim());
+        mode === 'prompt'
+          ? await generateRecipeFromPrompt({
+              description: prompt.trim(),
+              servings: defaultServings,
+            })
+          : await extractRecipeFromText(text.trim());
       // Refresh quota mirrors before checking output — server already
       // billed the op (if it succeeded server-side); local view should
       // reflect that. The Q5 threshold check below doesn't refund the
@@ -164,7 +157,6 @@ export function RecipeImportBanner({ onImported, defaultServings }: Props) {
 
       const accepted = await onImported(res);
       if (accepted) {
-        setUrl('');
         setPrompt('');
         setText('');
       }
@@ -201,7 +193,7 @@ export function RecipeImportBanner({ onImported, defaultServings }: Props) {
       </Text>
 
       <View className="mb-4 flex-row gap-2">
-        {(['url', 'prompt', 'text'] as Mode[]).map((m) => {
+        {(['prompt', 'text'] as Mode[]).map((m) => {
           const active = mode === m;
           return (
             <Pressable
@@ -221,25 +213,7 @@ export function RecipeImportBanner({ onImported, defaultServings }: Props) {
         })}
       </View>
 
-      {mode === 'url' ? (
-        <>
-          <Text className="mb-3 font-serif text-base text-gray-900">
-            {t('importBanner.url.prompt')}
-          </Text>
-          <TextInput
-            className="mb-3 rounded-lg border border-gray-300 px-4 py-3 text-base"
-            placeholder={t('importBanner.url.placeholder')}
-            autoCapitalize="none"
-            autoCorrect={false}
-            keyboardType="url"
-            value={url}
-            onChangeText={(next) => {
-              setUrl(next);
-              if (error) setError(null);
-            }}
-          />
-        </>
-      ) : mode === 'prompt' ? (
+      {mode === 'prompt' ? (
         <>
           <Text className="mb-3 font-serif text-base text-gray-900">
             {t('importBanner.prompt.prompt')}

@@ -136,7 +136,7 @@
     "eyebrow": "从这里开始…",
     "modes": {
       "url": "网址",
-      "prompt": "描述",
+      "prompt": "菜名",
       "text": "粘贴文本"
     },
     "url": {
@@ -144,8 +144,8 @@
       "placeholder": "https://…"
     },
     "prompt": {
-      "prompt": "说说你想吃什么,我们帮你写出来。",
-      "placeholder": "比如:快手版蒜香柠檬鸡"
+      "prompt": "输入菜名,我们帮你写好食谱,并自动填入下方模板。",
+      "placeholder": "比如:蘑菇牛肉奶油意面"
     },
     "text": {
       "prompt": "粘贴一份食谱,我们来梳理结构。",
